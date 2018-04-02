@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'iconfont';  /* project id 603856 */
-    src: url('https://at.alicdn.com/t/font_603856_qf7hlgzu7jjaif6r.eot');
-    src: url('https://at.alicdn.com/t/font_603856_qf7hlgzu7jjaif6r.eot?#iefix') format('embedded-opentype'),
-    url('https://at.alicdn.com/t/font_603856_qf7hlgzu7jjaif6r.woff') format('woff'),
-    url('https://at.alicdn.com/t/font_603856_qf7hlgzu7jjaif6r.ttf') format('truetype'),
-    url('https://at.alicdn.com/t/font_603856_qf7hlgzu7jjaif6r.svg#iconfont') format('svg');
+    src: url('https://at.alicdn.com/t/font_603856_yxrgn9572snn4s4i.eot');
+    src: url('https://at.alicdn.com/t/font_603856_yxrgn9572snn4s4i.eot?#iefix') format('embedded-opentype'),
+    url('https://at.alicdn.com/t/font_603856_yxrgn9572snn4s4i.woff') format('woff'),
+    url('https://at.alicdn.com/t/font_603856_yxrgn9572snn4s4i.ttf') format('truetype'),
+    url('https://at.alicdn.com/t/font_603856_yxrgn9572snn4s4i.svg#iconfont') format('svg');
 }
 body{
     background: #F5F5F5;
@@ -116,6 +116,7 @@ ul {
     right: 0;
     top: 0;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .gouwuche {
@@ -834,13 +835,14 @@ a:hover, a:hover span {
     line-height: 36px;
     color: #666;
     position: absolute;
-    left: 8px;
+    /*left: 8px;*/
     top: 0;
     z-index: 1;
     border: 0;
     width: 491px;
     height: 34px;
     outline: none;
+    padding-left: 8px;
 }
 
 .sousuo button {
@@ -896,9 +898,9 @@ a:hover, a:hover span {
     position: relative;
     height: 35.5px;
     background: #fff;
-    border-style: solid;
-    border-width: 0 0 1.5px;
-    border-color: #ff0036;
+    /*border-style: solid;*/
+    /*border-width: 0 0 1.5px;*/
+    /*border-color: #ff0036;*/
 }
 
 .innernav {
@@ -952,6 +954,7 @@ a:hover, a:hover span {
     position: relative;
     width: 100%;
     height: 500px;
+    border-top: 2px solid #ff0036;
 }
 
 .bannerleft {
@@ -1197,7 +1200,7 @@ a:hover, a:hover span {
     overflow: hidden;
 }
 
-.mainbanner {
+.mainbanner{
     background: rgb(19, 16, 61);
     position: absolute;
     width: 100%;
@@ -1205,7 +1208,6 @@ a:hover, a:hover span {
     opacity: 0;
     transition: all 0.5s;
 }
-
 .slidercontent .select {
     opacity: 1;
 }
@@ -1284,7 +1286,6 @@ a:hover, a:hover span {
 }
 
 .topbarbox {
-    /*display: block;*/
     position: fixed;
     top: 0;
     left: 0;
@@ -1508,6 +1509,7 @@ a:hover, a:hover span {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-size: 12px;
 }
 
 .enter {
@@ -1529,7 +1531,46 @@ a:hover, a:hover span {
 .branditem:hover .brand-mask {
     opacity: 1;
 }
-
+.huanyipi{
+    background: #fff;
+    cursor: pointer;
+}
+.hypicon{
+    width: 40px;
+    height: 40px;
+    font-family: 'iconfont';
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -30px;
+    text-align: center;
+    line-height: 38px;
+    color: #999;
+    transition: all 1s;
+}
+.hyptext{
+    display: block;
+    font-size: 14px;
+    line-height: 136px;
+    text-align: center;
+    color: #999;
+}
+.huanyipi:hover .hypicon{
+    color: #fff;
+    transform: rotate(360deg);
+}
+.hyptext:hover{
+    color: #fff;
+}
+.huanyipi:hover span{
+    color: #fff;
+}
+.huanyipi:hover{
+    background: #ff0036;
+    color: #fff;
+}
 .goods {
     margin: 20px auto 0;
     width: 1230px;
@@ -1690,6 +1731,7 @@ a:hover, a:hover span {
     display: block;
     border-bottom: 15px solid #f5f5f5;
     background: #fff;
+    position: relative;
 }
 
 .todaytab {
@@ -1718,9 +1760,11 @@ a:hover, a:hover span {
     padding: 0 20px;
     text-align: center;
     vertical-align: middle;
+
+}
+.tabcolor.select{
     background: #00b262;
 }
-
 .tabtitle {
     margin-top: 16px;
     font-size: 18px;
@@ -1731,6 +1775,7 @@ a:hover, a:hover span {
 .todayb {
     width: 462px;
     height: 225px;
+    display: none;
 }
 
 .tba {
@@ -1773,7 +1818,9 @@ a:hover, a:hover span {
 .todayb:hover .datetitle {
     color: #00b262;
 }
-
+.todayb.select{
+    display: block;
+}
 .tabdesp{
     margin-left: 26px;
     font-size: 20px;
@@ -1791,6 +1838,9 @@ a:hover, a:hover span {
     margin-right: 30px;
     width: 200px;
     height: 200px;
+    position: absolute;
+    right: 0;
+    top: 70px;
 }
 
 .pangshi {
@@ -1988,7 +2038,7 @@ a:hover, a:hover span {
     text-align: center;
 }
 .likeprice{
-    line-height: 32px;
+    /*line-height: 32px;*/
     color: #ff0036;
 }
 .renminbi{
@@ -2171,3 +2221,19 @@ a:hover, a:hover span {
 .listnav.active{
     background: #00B262;
 }
+.listnav1.active{
+    background: #ff0036;
+}
+.listnav2.active{
+    background: #EA5F8D;
+}
+.listnav3.active{
+    background: #0AA6E8;
+}
+.listnav4.active{
+    background: #F15453;
+}
+.listnav5.active{
+    background: #19C8A9;
+}
+
