@@ -1899,6 +1899,7 @@ a:hover, a:hover span {
     margin-top: 10px;
     position: relative;
     background: #fff;
+    overflow: hidden;
 }
 .zhongchou img{
     display: block;
